@@ -30,7 +30,7 @@ interface FooterProps {
 }
 
 export default function Footer({ brand, borderColor }: FooterProps) {
-  const logoPath = `/logos/${brand}.png`;
+  const logoPath = `${import.meta.env.BASE_URL}logos/${brand}.png`;
   
   return (
     <View style={[styles.footer, { borderTopColor: borderColor }]} fixed>

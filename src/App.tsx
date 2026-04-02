@@ -10,10 +10,10 @@ function App() {
   const { handleTranslateAll, isTranslating } = useTranslation();
 
   const brandOptions: { value: BrandType; label: string; logo: string }[] = [
-    { value: 'theramart', label: 'Theramart', logo: 'https://marina-nica.github.io/grupo-thera-tds-generator/public/logos/theramart.png' },
-    { value: 'nuvo', label: 'Nuvo', logo: '/logos/nuvo.png' },
-    { value: 'backbone', label: 'Backbone', logo: '/logos/backbone.png' },
-    { value: 'nextep', label: 'Nextep', logo: '/logos/nextep.png' },
+    { value: 'theramart', label: 'Theramart', logo: `${import.meta.env.BASE_URL}logos/theramart.png` },
+    { value: 'nuvo', label: 'Nuvo', logo: `${import.meta.env.BASE_URL}logos/nuvo.png` },
+    { value: 'backbone', label: 'Backbone', logo: `${import.meta.env.BASE_URL}logos/backbone.png` },
+    { value: 'nextep', label: 'Nextep', logo: `${import.meta.env.BASE_URL}logos/nextep.png` },
   ];
 
   return (

@@ -1,5 +1,4 @@
-import React from 'react';
-import { Document, Page, Text, View, StyleSheet, Font } from '@react-pdf/renderer';
+import { Document, Font } from '@react-pdf/renderer';
 import { BrandType, TDSData } from '../types';
 import TheramartLayout from './BrandLayouts/TheramartLayout';
 import NuvoLayout from './BrandLayouts/NuvoLayout';
@@ -18,42 +17,37 @@ Font.registerHyphenationCallback(word => [word]);
 Font.register({
   family: 'Mont',
   fonts: [
-    { src: '/fonts/Mont-Regular.otf', fontWeight: 400 },
-    { src: '/fonts/Mont-Heavy.otf', fontWeight: 700 },
+    { src: `${import.meta.env.BASE_URL}fonts/Mont-Regular.otf`, fontWeight: 400 },
+    { src: `${import.meta.env.BASE_URL}fonts/Mont-Heavy.otf`, fontWeight: 700 },
   ],
 });
 
 Font.register({
   family: 'SFCompact',
   fonts: [
-    { src: '/fonts/SFCompactDisplay-Light.otf', fontWeight: 400 },
-    { src: '/fonts/SFCompactDisplay-Bold.otf', fontWeight: 700 },
+    { src: `${import.meta.env.BASE_URL}fonts/SFCompactDisplay-Light.otf`, fontWeight: 400 },
+    { src: `${import.meta.env.BASE_URL}fonts/SFCompactDisplay-Bold.otf`, fontWeight: 700 },
   ],
 });
 
 Font.register({
   family: 'BreveSans',
   fonts: [
-    { src: '/fonts/Breve Sans Text Light.otf', fontWeight: 400 },
-    { src: '/fonts/Breve Sans Text Bold.otf', fontWeight: 700 },
+    { src: `${import.meta.env.BASE_URL}fonts/Breve Sans Text Light.otf`, fontWeight: 400 },
+    { src: `${import.meta.env.BASE_URL}fonts/Breve Sans Text Bold.otf`, fontWeight: 700 },
   ],
 });
 
 Font.register({
   family: 'SizmoPro',
   fonts: [
-    { src: '/fonts/SizmoPro.ttf', fontWeight: 400 },
-    { src: '/fonts/SizmoPro-Bold.ttf', fontWeight: 700 },
+    { src: `${import.meta.env.BASE_URL}fonts/SizmoPro.ttf`, fontWeight: 400 },
+    { src: `${import.meta.env.BASE_URL}fonts/SizmoPro-Bold.ttf`, fontWeight: 700 },
   ],
 });
 
 
-const styles = StyleSheet.create({
-  page: {
-    padding: 30,
-    fontFamily: 'Helvetica',
-  },
-});
+
 
 export default function PDFDocument({ brand, data }: PDFDocumentProps) {
   const renderLayout = () => {
