@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/grupo-thera-tds-generator', 
+  base: '/grupo-thera-tds-generator/', 
   plugins: [
     react(),
     tailwindcss(),

@@ -33,8 +33,8 @@ Font.register({
 Font.register({
   family: 'BreveSans',
   fonts: [
-    { src: `${import.meta.env.BASE_URL}fonts/Breve Sans Text Light.otf`, fontWeight: 400 },
-    { src: `${import.meta.env.BASE_URL}fonts/Breve Sans Text Bold.otf`, fontWeight: 700 },
+    { src: `${import.meta.env.BASE_URL}fonts/Breve%20Sans%20Text%20Light.otf`, fontWeight: 400 },
+    { src: `${import.meta.env.BASE_URL}fonts/Breve%20Sans%20Text%20Bold.otf`, fontWeight: 700 },
   ],
 });
 
