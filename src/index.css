@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/fonts/Mont-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Mont';
+  src: url('/fonts/Mont-Heavy.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'SFCompact';
+  src: url('/fonts/SFCompactDisplay-Light.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SFCompact';
+  src: url('/fonts/SFCompactDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'BreveSans';
+  src: url('/fonts/Breve Sans Text Light.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'BreveSans';
+  src: url('/fonts/Breve Sans Text Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'SizmoPro';
+  src: url('/fonts/SizmoPro.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SizmoPro';
+  src: url('/fonts/SizmoPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@theme {
+  --color-theramart-1: #3cb4e5;
+  --color-theramart-2: #1C355E;
+  --color-theramart-3: #ABE1FA;
+  --color-theramart-4: #2271ac;
+  --color-theramart-5: #f1f1f1;
+
+  --color-nuvo-1: #fafaf4;
+  --color-nuvo-2: #ff5d00;
+  --color-nuvo-3: #ebf4df;
+  --color-nuvo-4: #d9d9d9;
+  --color-nuvo-5: #ffba6f;
+  --color-nuvo-6: #262626;
+
+  --color-backbone-1: #bdff84;
+  --color-backbone-2: #a4df64;
+  --color-backbone-3: #655dc6;
+  --color-backbone-4: #400286;
+  --color-backbone-5: #61acc1;
+  --color-backbone-6: #8ae0b0;
+
+  --color-nextep-1: #6cc7ba;
+  --color-nextep-2: #b2e0e1;
+  --color-nextep-3: #161616;
+}
+
+@layer base {
+  body {
+    @apply antialiased bg-gray-50 text-gray-900;
+  }
+}
